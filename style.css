@@ -1,0 +1,15 @@
+.wrapper{
+    width: 90%;
+    height: 150px;
+    background-color: red;
+    position: relative;
+}
+
+.block{
+    aspect-ratio: 1;
+    height: 90%;
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+}
