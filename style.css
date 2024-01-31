@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Pixel;
+}
+@font-face {
+    font-family: 'Pixel';
+    src: url('Fonts/pixelFont.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+body,html{
+    height: 100%;
+    position: relative;
+}
+canvas{
+    display: block;
+    cursor: none;
+}
+#counter{
+    position: absolute;
+    top:15px;
+    right:30px;
+    color: #fff;
+    font-size: 55px;
+}
+.gameover{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 4;
+    background-color: #b160bc;
+    justify-content: space-between;
+    position: absolute;
+    width: 30%;
+    height: 40%;
+    top:50%;
+    left:50%;
+    border-radius: 20px;
+    padding: 30px;
+    transform-origin: top;
+    transition:.4s;
+    transform: translate(-50%,-50%) scaleY(0);
+}
+section{
+    overflow: hidden;
+    padding: 30px;
+    background: #714eff;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    font-size: 50px;
+    text-align: center;
+    justify-content: space-between;
+}
+h1{
+    max-width: 900px;
+}
+#player{
+    height: 80%;
+    position: absolute;
+    bottom: 0;
+    left:2%;
+    image-rendering: pixelated;
+}
+#shkelet{
+    height: 80%;
+    position: absolute;
+    bottom: 0;
+    right:-6%;
+    image-rendering: pixelated;
+}
+a{
+    padding: 30px;
+    text-decoration: none;
+    border-radius: 10px;
+    margin: auto;
+    background: #f278f8;
+    z-index: 9;
+}
+#f11{
+    max-width: 33%;
+}
+.gameover h1{
+    font-size: 60px;
+}
+.gameover p{
+    display: block;
+    width: fit-content;
+    font-size: 40px;
+}
+.gameover img{
+    transform: scaleX(-1);
+    height: 70%;
+}
+.blackout{
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    background-color: #000A;
+}
