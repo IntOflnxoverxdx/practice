@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Скачай город!</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="scripts/carousel.js" defer></script>
+    <script src="scripts/add_fav.js" defer></script>
+    <script src="scripts/search_post.js" defer></script>
+    <script src="scripts/search.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="header__top">
+            <div class="container">
+                <a href="index.html" class="logo">   
+                    <img src="img/logo.png" alt="">
+                </a>
+                <a href="catalog.html" class="header__catalog">
+                    Каталог
+                </a>
+                <a href="profile.html" class="header__profile">
+                    Профиль
+                </a>
+            </div>
+        </div>
+        <div class="header__bottom">
+            <div class="container">
+                <nav>
+                    <ul>
+                        <a href="company.html"><li>О компании</li></a>
+                        <li class="header__search"><input placeholder="Поиск по каталогу" class="header__search__input" type="text"><button id="search__button"></button></li>
+                        <a href="contacts.html"><li>Контакты</li></a>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <section class="catalog">
+                <h2>Каталог</h2>
+                <div class="catalog__wrapper">
+                    <div class="catalog__filters">
+                        <h4>Фильтры</h4>
+                        <p class="filter__label">Жанр</p>
+                        <div class="genre__select__wrapper">
+                            <select name="genre" id="genre__select">мав
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                            </select>
+                        </div>
+                        <p class="filter__label">Автор</p>
+                        <input id="filter__author" type="text" placeholder="Автор книги">
+                        <p class="filter__label">Рейтинг</p>
+                        <div class="filter__rating">
+                            <div class="rating__star"></div>
+                            <div class="rating__star"></div>
+                            <div class="rating__star"></div>
+                            <div class="rating__star"></div>
+                            <div class="rating__star"></div>
+                        </div>
+                        <button id="filters__apply">ПРИМЕНИТЬ</button>
+                    </div>
+                
+                <div class="search__results">
+
+                </div>
+                
+                
+                </div>
+
+
+                <script type="text/python">
+                    import pyautogui as pg
+                    pg.moveTo(0,0)
+                </script>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <p id="credits">Сайт разрабатывал кирилл синус</p>
+        </div>
+    </footer>
+</body>
+</html>
